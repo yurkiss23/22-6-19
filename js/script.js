@@ -16,4 +16,15 @@ window.onload=function(){
     function clickBtn(){
         alert("click btn");
     }
+
+    document.getElementById("btnAddContent").onclick = function(){
+        //alert("click btnAddContent");
+        var txtInput = document.getElementById("txtValue");
+        var divContent = document.getElementById("content");
+        divContent.innerHTML =
+            `<a href="#">
+                <img src="${txtInput.value}"/>
+            </a>`;
+        alert(txtInput.value);
+    }
 }
